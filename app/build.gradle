@@ -1,11 +1,17 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    apply plugin: 'kotlin-android'
+    apply plugin: 'kotlin-android-extensions'
 }
+ext.kotlin_version = 'x.y.z'
+
 
 android {
     namespace 'fr.isen.kaddouri.droidburger'
     compileSdk 33
+
+
 
     defaultConfig {
         applicationId "fr.isen.kaddouri.droidburger"

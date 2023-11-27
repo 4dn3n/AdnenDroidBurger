@@ -1,6 +1,20 @@
 <resources>
-    <string name="app_name">DroidBurger</string>
-    <string name="name">Name</string>
-    <string name="droidburger_l_avenir_des_saveurs_o_la_timidit_c_de_la_place_des_sensations_de_go_t_inoubliables">DroidBurger - L\'Avenir des Saveurs, où la Timidité cède la Place à des Sensations de Goût Inoubliables</string>
+    <string name="app_name">AdnenDroidBurger</string>
+    <string name="droidburger_l_avenir_des_saveurs_o_la_timidit_c_de_la_place_des_sensations_de_go_t_inoubliables">AdnenDroidBurger - L\'Avenir des Saveurs, où la Timidité cède la Place à des Sensations de Goût Inoubliables</string>
     <string name="saisissez_votre_adresse_postale">Saisissez votre adresse postale</string>
+    <string name="saisissez_votre_numero">Saisissez votre numero</string>
+    <string name="saisissez_votre_nom">Saisissez votre nom</string>
+    <string name="saisissez_votre_prenom">Saisissez votre prenom</string>
+    <string name="choisissez_une_option_dans_la_liste">choisissez_une option dans la liste</string>
+    <string name="label_commander">COMMANDER</string>
+    <string name="label_TODO">TODO</string>
+
+    <string-array name="burger_list">
+        <item>Cheese Burger</item>
+        <item>Veggy Burger</item>
+        <item>Italian Burger</item>
+        <item>Montagnard Burger</item>
+        <item>Chef</item>
+    </string-array>
+
 </resources>

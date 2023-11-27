@@ -9,7 +9,28 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:ignore="ExtraText">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/background_image"
+            android:scaleType="centerCrop"
+            />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/label_TODO"
+            android:src="@drawable/capture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
         <TextView
             android:id="@+id/textView2"
             android:layout_width="261dp"
@@ -21,14 +42,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2"
             app:layout_constraintVertical_bias="0.218"
-            tools:ignore="HardcodedText" />
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            />
 
         <EditText
             android:id="@+id/editTextTextPostalAddress"
             android:layout_width="wrap_content"
             android:layout_height="56dp"
             android:ems="10"
-            android:hint="Adresse postale"
+            android:hint="@string/saisissez_votre_adresse_postale"
             android:importantForAutofill="no"
             android:inputType="textPostalAddress"
             app:layout_constraintBottom_toTopOf="@+id/editTextPhone"
@@ -37,12 +60,13 @@
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="LabelFor" />
 
+
         <EditText
             android:id="@+id/editTextPhone"
             android:layout_width="wrap_content"
             android:layout_height="56dp"
             android:ems="10"
-            android:hint="Numero de telephone"
+            android:hint="@string/saisissez_votre_numero"
             android:importantForAutofill="no"
             android:inputType="phone"
             app:layout_constraintBottom_toTopOf="@+id/spinner"
@@ -50,17 +74,7 @@
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="TODO"
-            android:src="@drawable/capture"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/avatars" />
+
 
         <EditText
             android:id="@+id/editTextTextPersonName"
@@ -69,7 +83,7 @@
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="textPersonName"
-            android:text="@string/name"
+            android:hint="@string/saisissez_votre_nom"
             app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
@@ -85,7 +99,7 @@
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="textPersonName"
-            android:text="@string/name"
+            android:hint="@string/saisissez_votre_prenom"
             app:layout_constraintBottom_toTopOf="@+id/editTextTextPostalAddress"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
@@ -98,21 +112,22 @@
             android:id="@+id/spinner"
             android:layout_width="316dp"
             android:layout_height="56dp"
-            android:contentDescription="Choisissez une option dans la liste"
-            app:layout_constraintBottom_toTopOf="@+id/button"
+            android:contentDescription="@string/choisissez_une_option_dans_la_liste"
+            app:layout_constraintBottom_toTopOf="@+id/buttonCommander"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.673"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonCommander"
             android:layout_width="172dp"
             android:layout_height="56dp"
-            android:text="COMMANDER"
+            android:text="@string/label_commander"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent" />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
